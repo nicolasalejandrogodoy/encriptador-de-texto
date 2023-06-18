@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Encriptador de Texto</title>
+   
+</head>
+
+
+<body>
+
+
+
+    <div class="contenedor-principal">
+      <header> <h1><img src="imagenes/Frame 6.png" alt=""></h1></header> 
+        <div class="contenedor-divs-btn-y-txt">
+            <div class="contenedor-txt-y-aviso">
+                <textarea class="myTextarea" type="text" placeholder="Ingrese  el texto aqui"></textarea>
+                <p><i class="fa-solid fa-circle-exclamation" ></i> Sólo letras minusculas y sin acentos</p>
+            </div>
+            <div class="contenedor-btns"><button class="btn encriptar" onclick="btnEncriptar()" >Encriptar</button>
+                <button class="btn desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <textarea  class="txt-encriptado" value=""></textarea>
+        <div class="contenedor-txt-encriptado">
+            
+            <div class="mensaje-txt-no-encontrado">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <img class="img-txt-no-encontrado" src="imagenes/Muñeco.png" alt="">
+               
+
+        
+
+        </div><button class="btn copiar" onclick="btnCopiar()">Copiar</button>
+        <script src="script.js" ></script>
+</body>
+
+</html>
