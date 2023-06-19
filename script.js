@@ -32,7 +32,12 @@ function btnEncriptar(){
 }
 function btnDesencriptar(){
     const textoDesencriptado=desencriptarTexto(textArea.value)
-    
+    if(textArea.value !==""){ 
+      contenedor.style.display="none";
+      botonCopiar.style.display="flex";
+      
+      
+  }
     parrafo.value=textoDesencriptado;
     textArea.value="";
     botonCopiar.textContent="Copiar";
